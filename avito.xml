@@ -1,23 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Ads formatVersion="3" target="Avito.ru">
   <Ad>
-    <Id>DRAFT-1791127451533</Id>
-    <Title>Мёд Гречишный</Title>
-    <Description><![CDATA[натуральный мед]]></Description>
+    <Id>DRAFT-1791138736170</Id>
+    <Title>мед</Title>
+    <Description><![CDATA[вкусный натуральный]]></Description>
     <Category>Продукты питания</Category>
     <AdType>Товар от производителя</AdType>
     <GoodsType>Мёд и продукты пчеловодства</GoodsType>
     <GoodsSubType>Мёд</GoodsSubType>
     <ProductType>Мёд</ProductType>
-    <Variety>Гречишный</Variety>
-    <HarvestYear>2026</HarvestYear>
-    <Price>700</Price>
-    <Address>Кострома, Советская улица</Address>
+    <Price>1000</Price>
+    <Address>трудовой славы 5</Address>
     <ManagerName>Мой магазин</ManagerName>
     <Images>
-      <Image url="https://avito-flow-feed.motya2908.chatgpt.site/media/listing-media/f0685100-9e03-42a3-b70f-d5025f7dbffe.jpg"/>
+      <Image url="https://avito-flow-feed.motya2908.chatgpt.site/media/listing-media/f25cee74-471c-4846-8d46-b919e732bbbd.jpg"/>
     </Images>
     <WholesaleType>Нет</WholesaleType>
-    <NDS>Без НДС</NDS>
+    <ListingFee>Package</ListingFee>
+  </Ad>
+  <Ad>
+    <Id>DRAFT-1791137301269</Id>
+    <Title>мед</Title>
+    <Description><![CDATA[вкусный]]></Description>
+    <Category>Продукты питания</Category>
+    <AdType>Товар от производителя</AdType>
+    <GoodsType>Мёд и продукты пчеловодства</GoodsType>
+    <GoodsSubType>Мёд</GoodsSubType>
+    <ProductType>Мёд</ProductType>
+    <Price>777</Price>
+    <Address>Москва, Тверская улица</Address>
+    <ManagerName>Мой магазин</ManagerName>
+    <Images>
+      <Image url="https://avito-flow-feed.motya2908.chatgpt.site/media/listing-media/f25cee74-471c-4846-8d46-b919e732bbbd.jpg"/>
+    </Images>
+    <WholesaleType>Нет</WholesaleType>
+    <ListingFee>Package</ListingFee>
   </Ad>
 </Ads>
