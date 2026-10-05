@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Ads formatVersion="3" target="Avito.ru">
   <Ad>
-    <Id>DRAFT-1791138736170</Id>
-    <Title>мед</Title>
-    <Description><![CDATA[вкусный натуральный]]></Description>
-    <Category>Продукты питания</Category>
-    <AdType>Товар от производителя</AdType>
-    <GoodsType>Мёд и продукты пчеловодства</GoodsType>
-    <GoodsSubType>Мёд</GoodsSubType>
-    <ProductType>Мёд</ProductType>
-    <Price>1000</Price>
-    <Address>трудовой славы 5</Address>
-    <ManagerName>Мой магазин</ManagerName>
-    <Images>
-      <Image url="https://avito-flow-feed.motya2908.chatgpt.site/media/listing-media/f25cee74-471c-4846-8d46-b919e732bbbd.jpg"/>
-    </Images>
-    <WholesaleType>Нет</WholesaleType>
-    <ListingFee>Package</ListingFee>
-  </Ad>
-  <Ad>
     <Id>DRAFT-1791137301269</Id>
     <Title>мед</Title>
     <Description><![CDATA[вкусный]]></Description>
