@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Ads formatVersion="3" target="Avito.ru">
+<?xml version="1.0" encoding="UTF-8"?><Ads formatVersion="3" target="Avito.ru">
   <Ad>
     <Id>DRAFT-1791393394901</Id>
     <Title>мед</Title>
@@ -13,7 +12,7 @@
     <Address>геленджик, улица Ленина</Address>
     <ManagerName>Мой магазин</ManagerName>
     <Images>
-      <Image url="https://avito-flow-feed.motya2908.chatgpt.site/media/listing-media/acb29ec8-db7f-4691-ba3e-53df0eb5d66c.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/e0f5bae95dbb5d4a6f169eca3a8ee5c02129ed5f0698bef735e2948a0baee36f.jpg"/>
     </Images>
     <WholesaleType>Нет</WholesaleType>
     <ListingFee>Package</ListingFee>
@@ -60,7 +59,7 @@
     <Address>Ярославль, улица Свободы</Address>
     <ManagerName>Мой магазин</ManagerName>
     <Images>
-      <Image url="https://avito-flow-feed.motya2908.chatgpt.site/media/listing-media/30e88c4a-85e4-4489-94f1-855c62b2c010.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/e1b71826b3c7b059731b53c3430419ca7a1c96a78719135a557d8dd1175dc81a.jpg"/>
     </Images>
     <WholesaleType>Нет</WholesaleType>
     <ListingFee>Package</ListingFee>
