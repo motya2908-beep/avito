@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Ads formatVersion="3" target="Avito.ru">
   <Ad>
+    <Id>DRAFT-1791393394901</Id>
+    <Title>мед</Title>
+    <Description><![CDATA[вкусный сладкий]]></Description>
+    <Category>Продукты питания</Category>
+    <AdType>Товар от производителя</AdType>
+    <GoodsType>Мёд и продукты пчеловодства</GoodsType>
+    <GoodsSubType>Мёд</GoodsSubType>
+    <ProductType>Мёд</ProductType>
+    <Price>555</Price>
+    <Address>геленджик, улица Ленина</Address>
+    <ManagerName>Мой магазин</ManagerName>
+    <Images>
+      <Image url="https://avito-flow-feed.motya2908.chatgpt.site/media/listing-media/acb29ec8-db7f-4691-ba3e-53df0eb5d66c.jpg"/>
+    </Images>
+    <WholesaleType>Нет</WholesaleType>
+    <ListingFee>Package</ListingFee>
+  </Ad>
+  <Ad>
     <Id>DRAFT-1791305403758</Id>
     <Title>Мед Белой Акации</Title>
     <Description><![CDATA[Мёд белой акации урожая 2026 года — светлый, нежный, с мягким вкусом 🍯🌸 Подойдёт тем, кто не любит резкую терпкость и насыщенную сладость.
@@ -42,7 +60,7 @@
     <Address>Ярославль, улица Свободы</Address>
     <ManagerName>Мой магазин</ManagerName>
     <Images>
-      <Image url="https://avito-flow-feed.motya2908.chatgpt.site/media/listing-media/e5c7664a-0e98-43fa-bcee-30903abd4d20.jpg"/>
+      <Image url="https://avito-flow-feed.motya2908.chatgpt.site/media/listing-media/30e88c4a-85e4-4489-94f1-855c62b2c010.jpg"/>
     </Images>
     <WholesaleType>Нет</WholesaleType>
     <ListingFee>Package</ListingFee>
