@@ -4,41 +4,63 @@ on:
   schedule:
     - cron: "7 * * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/update-feed.yml
+      - scripts/**
+      - tests/**
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
-  group: update-avito-feed
-  cancel-in-progress: true
+  group: update-avito-feed-pages
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Download and validate feed
+      - name: Test photo mirroring
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Download feed and mirror real JPG/PNG photos
         env:
           SOURCE_FEED_URL: ${{ secrets.SOURCE_FEED_URL }}
-        run: |
-          set -euo pipefail
-          test -n "$SOURCE_FEED_URL"
-          curl --fail --silent --show-error --location "$SOURCE_FEED_URL" --output avito.xml.next
-          grep -q '<Ads formatVersion="3" target="Avito.ru">' avito.xml.next
-          grep -q '<Ad>' avito.xml.next
-          grep -q '</Ads>' avito.xml.next
-          mv avito.xml.next avito.xml
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: python3 scripts/mirror_feed.py
 
       - name: Publish changes
         run: |
           set -euo pipefail
           git config user.name "Avito Feed Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add avito.xml
+          git add avito.xml media media-manifest.json
           if git diff --cached --quiet; then
             exit 0
           fi
-          git commit -m "Update Avito feed"
+          git commit -m "Update Avito feed and public photos"
           git push
+
+      - name: Upload only the public feed and photos
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy public files to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
