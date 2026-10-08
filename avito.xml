@@ -1,65 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?><Ads formatVersion="3" target="Avito.ru">
   <Ad>
-    <Id>DRAFT-1791393394901</Id>
-    <Title>мед</Title>
-    <Description><![CDATA[вкусный сладкий]]></Description>
-    <Category>Продукты питания</Category>
-    <AdType>Товар от производителя</AdType>
-    <GoodsType>Мёд и продукты пчеловодства</GoodsType>
-    <GoodsSubType>Мёд</GoodsSubType>
-    <ProductType>Мёд</ProductType>
-    <Price>555</Price>
-    <Address>геленджик, улица Ленина</Address>
-    <ManagerName>Мой магазин</ManagerName>
-    <Images>
-      <Image url="https://motya2908-beep.github.io/avito/media/e0f5bae95dbb5d4a6f169eca3a8ee5c02129ed5f0698bef735e2948a0baee36f.jpg"/>
-    </Images>
-    <WholesaleType>Нет</WholesaleType>
-    <ListingFee>Package</ListingFee>
-  </Ad>
-  <Ad>
-    <Id>DRAFT-1791305403758</Id>
-    <Title>Мед Белой Акации</Title>
-    <Description><![CDATA[Мёд белой акации урожая 2026 года — светлый, нежный, с мягким вкусом 🍯🌸 Подойдёт тем, кто не любит резкую терпкость и насыщенную сладость.
+    <Id>SIM-50D82226580C46338E374E1D9414350B</Id>
+    <Title>Вкусный Мед Белой Акации 2026 год</Title>
+    <Description><![CDATA[Мёд белой акации, урожай 2026 года. Светлый и нежный, с мягким вкусом и лёгким цветочным ароматом. Подойдёт тем, кто не любит резкую терпкость.
 
-Семейная пасека из Краснодарского края. У акациевого мёда лёгкий цветочный аромат, и он долго остаётся жидким. Его можно добавить в чай, кашу, творог, выпечку или подать к блинам и десертам.
+Долго остаётся жидким. Его можно добавить в чай, кашу, творог, блины или десерт; подойдёт и для подарка.
 
-🌿 Белая акация:
-• мягкий вкус и светлый оттенок
-• без резкой терпкости
-• долго остаётся жидким
-• подойдёт к столу или в подарок
+🌿 Мягкий вкус, светлый оттенок и лёгкий цветочный аромат.
 
-🐝 Заботимся о пасеке и следим за качеством на всех этапах — от ухода за пчёлами до упаковки.
+🐝 Следим за мёдом и надёжно упаковываем заказ.
 
-💰 Цена:
-• 1 кг — 1400 ₽
-• 3 л ≈ 4,5 кг — 5600 ₽
+✔ Без сахара и сиропов
+✔ Без добавок и ароматизаторов
+✔ Без нагрева
 
-🎁 К заказу добавляем пробники других сортов — можно сравнить вкусы.
+💰 1 кг — 1400 ₽
 
-📍 Самовывоз в Краснодаре: ул. Трудовой Славы, 5. В описании указана возможность бесплатной дегустации перед покупкой.
+🎁 К заказу добавляем пробники других сортов мёда.
 
-🚗 Доставка по Краснодару — бесплатно при заказе от 4000 ₽.
+📦 Отправляем из Краснодара. Авито Доставка, Ozon и 5Post — от 200 ₽. При заказе от 4000 ₽ доставка бесплатная. Упаковываем герметично и надёжно.
 
-📦 Отправка из Краснодара по России:
-• Авито Доставка
-• Ozon и 5Post — от 200 ₽
-• при заказе от 4000 ₽ доставка бесплатно
-
-Упаковываем герметично и аккуратно. Можно собрать набор из разных сортов мёда.
-
-📲 Напишите в сообщения — подскажем по вкусу и объёму, рассчитаем доставку.]]></Description>
+📲 Напишите в сообщения — расскажем о вкусе и поможем выбрать объём или набор. В профиле есть и другие сорта мёда.]]></Description>
     <Category>Продукты питания</Category>
     <AdType>Товар от производителя</AdType>
     <GoodsType>Мёд и продукты пчеловодства</GoodsType>
     <GoodsSubType>Мёд</GoodsSubType>
     <ProductType>Мёд</ProductType>
     <Price>1400</Price>
-    <Address>Ярославль, улица Свободы</Address>
+    <Address>ставрополь, Проспект Карла Маркса</Address>
     <ManagerName>Мой магазин</ManagerName>
     <Images>
-      <Image url="https://motya2908-beep.github.io/avito/media/e1b71826b3c7b059731b53c3430419ca7a1c96a78719135a557d8dd1175dc81a.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/45d0f5b024fafc41ecf4f09b94d1969ea091dcf8508f7a90b784045f12298ab7.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/2a4fc26d19e88e72d299d55e6ad0d59802f55c0e4c1946cdf03e65a9f89ab990.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/686eebc1a641e6a66268c0c05c2f1f8714e4434ba7fba935fd310ad0c8d7e312.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/10612b0eb147a9603014d819a63340e71884083881c00737bb517bf9f9000339.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/2cc1a2bb4de195774358655088a476394c0358572854c43319f1f9dc7f6e16ce.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/4d07f083ae83f6f9754c1396303fcda781fc24852488bd2f959cd554afafd0f7.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/d2319fce204004dba7c9543038de166484cd2deeda17ffea951fe5ed63e241e3.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/3050d14d69d8a02d83aab4e42cb489d5aa0b73875347107d6a6b862bb825f127.jpg"/>
+    </Images>
+    <WholesaleType>Нет</WholesaleType>
+    <ListingFee>Package</ListingFee>
+  </Ad>
+  <Ad>
+    <Id>DRAFT-1791444349963</Id>
+    <Title>Натуральный Мед Белой Акации 2026 год</Title>
+    <Description><![CDATA[Мёд белой акации, 2026 год
+
+Светлый, нежный мёд с мягким вкусом и лёгким цветочным ароматом. Долго остаётся жидким. Подойдёт тем, кто предпочитает мёд без резкой терпкости.
+
+Его можно добавить в чай, кашу, творог, блины или десерт. Хороший вариант на каждый день и в подарок.
+
+🌿 О белой акации
+• мягкий вкус и светлый оттенок
+• лёгкий цветочный аромат
+• долго остаётся жидким
+• без резкой терпкости
+
+🐝 Мы занимаемся пасекой и следим за мёдом и упаковкой заказа.
+
+✔ без сахара и сиропов
+✔ без добавок и ароматизаторов
+✔ без нагрева
+
+💰 1 кг — 1400 ₽
+
+🎁 К заказу добавляем пробники других сортов мёда.
+
+📦 Отправляем из Краснодара. Авито-доставка, Ozon и 5Post — от 200 ₽. При заказе от 4000 ₽ доставка бесплатная. Упаковываем герметично и надёжно.
+
+📲 Напишите в сообщения — расскажем о вкусе и поможем подобрать объём или набор. В профиле есть и другие сорта мёда.]]></Description>
+    <Category>Продукты питания</Category>
+    <AdType>Товар от производителя</AdType>
+    <GoodsType>Мёд и продукты пчеловодства</GoodsType>
+    <GoodsSubType>Мёд</GoodsSubType>
+    <ProductType>Мёд</ProductType>
+    <Price>1400</Price>
+    <Address>Самара, Ленинградская улица</Address>
+    <ManagerName>Мой магазин</ManagerName>
+    <Images>
+      <Image url="https://motya2908-beep.github.io/avito/media/cbe202012e15755194c23c7a36c93271c8e2e6c8ccf7a98b6db729e86aadf994.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/d49ccec275c8392b3d24d1f27b2a49ec808c64bf76a91e8d4c82aeb25689385b.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/71690ecf8d0d39aa506d9241e9efbf1b72fd48c01a3f7d9ead1568aece630e2b.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/70a8134a2bfdb1809fd883ed826614dfce3591f82f1f541870c4aa4dda948dc4.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/52e3f26b333bac440bdf90d043caf38f166d0bfacd618b53c9b7affa474a5f84.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/83f39ba3a975cf24aa61a8ef64cc8681e1481d260a3aee4230b5528dd7ad21c9.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/366e42e2e8efe9b83aca076d490b1045bf799aaa3b89723521f689e4012aa50e.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/9b97a40c1e5dd2fbe27b2b8c406daceae847c28d965509597b2a8d7952766629.jpg"/>
     </Images>
     <WholesaleType>Нет</WholesaleType>
     <ListingFee>Package</ListingFee>
