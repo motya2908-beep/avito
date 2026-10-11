@@ -1,5 +1,377 @@
 <?xml version="1.0" encoding="UTF-8"?><Ads formatVersion="3" target="Avito.ru">
   <Ad>
+    <Id>SIM-DE3974C77C9C4538B48377FA6953E3EB</Id>
+    <Title>Паста Амосова с мёдом 450г</Title>
+    <Description><![CDATA[Паста Амосова, 450 г — густая фруктово-ореховая смесь с мёдом, с лёгкой кислинкой и без приторности. Подойдёт к чаю, каше, творогу или йогурту.<br />
+<br />
+Готовим по рецепту Николая Амосова: соединяем мёд с нашей пасеки, сухофрукты, грецкий орех и лимон. Добавленного сахара, консервантов и ароматизаторов нет. Сладость дают мёд и финики, лимон добавляет свежую кислинку.<br />
+<br />
+<strong>В составе:</strong><br />
+• мёд с нашей пасеки<br />
+• курага, изюм, чернослив и финики<br />
+• грецкий орех и лимон<br />
+<br />
+У пасты густая текстура, кусочки ореха, фруктовая сладость и цитрусовая нотка. Её можно подать к чаю, намазать на хлеб или добавить в кашу, творог либо йогурт.<br />
+<br />
+<strong>Цена:</strong> 450 г — 750 ₽<br />
+<br />
+📦 Заказы отправляем по всей России. Доступна Авито Доставка; Ozon и 5Post — от 200 ₽. Бесплатная доставка при заказе от 4 000 ₽. Отправляем из Краснодара, по возможности — в день оформления. Банку герметично закрываем и надёжно упаковываем.<br />
+<br />
+🐝 В профиле есть мёд разных сортов и другие продукты пчеловодства. Можно собрать набор для себя или в подарок. Напишите в сообщения, чтобы заказать пасту или уточнить детали.]]></Description>
+    <Category>Продукты питания</Category>
+    <AdType>Товар от производителя</AdType>
+    <GoodsType>Бакалея</GoodsType>
+    <GoodsSubType>Снеки, орехи и сухофрукты</GoodsSubType>
+    <Price>750</Price>
+    <Address>Воронеж, Проспект Революции</Address>
+    <ManagerName>Мой магазин</ManagerName>
+    <Images>
+      <Image url="https://motya2908-beep.github.io/avito/media/c75621b73a0eba87e5a2236f653812eb3c6cc42a713481b698f47b6fb0e23593.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/2638e4295063315cd57f3a6d2e36dac85ab1910c06b76bd39c2c57d57694f211.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/f59ef3269e8f06b7837470308d6c6d23a19ef4a17d747c2d1e9f973bd2a61a2a.jpg"/>
+      <Image url="https://motya2908-beep.github.io/avito/media/fd922def67e4eede4f8d2a988794700447977730e7e1bd4ab722cb49ed4449da.jpg"/>
+    </Images>
+    <WholesaleType>Нет</WholesaleType>
+    <ListingFee>Package</ListingFee>
+    <ContactMethod>В сообщениях</ContactMethod>
+    <SubType>Снеки</SubType>
+    <Promo>Manual</Promo>
+    <PromoManualOptions>
+      <Item>
+        <Region>Адыгея</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Алтайский край</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Амурская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Архангельская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Астраханская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Башкортостан</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Белгородская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Брянская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Бурятия</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Владимирская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Волгоградская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Вологодская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Воронежская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Дагестан</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Еврейская АО</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Забайкальский край</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Ивановская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Ингушетия</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Иркутская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Кабардино-Балкария</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Калининградская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Калмыкия</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Калужская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Камчатский край</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Карачаево-Черкесия</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Карелия</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Кемеровская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Кировская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Коми</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Костромская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Краснодарский край</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Красноярский край</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Крым</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Курганская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Курская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Ленинградская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Липецкая область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Магаданская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Марий Эл</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Мордовия</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Москва</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Московская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Мурманская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Ненецкий АО</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Нижегородская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Новгородская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Новосибирская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Омская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Оренбургская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Орловская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Пензенская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Пермский край</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Приморский край</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Псковская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Республика Алтай</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Ростовская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Рязанская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Самарская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Санкт-Петербург</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Саратовская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Саха (Якутия)</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Сахалинская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Свердловская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Северная Осетия</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Смоленская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Ставропольский край</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Тамбовская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Татарстан</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Тверская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Томская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Тульская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Тыва</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Тюменская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Удмуртия</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Ульяновская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Хабаровский край</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Хакасия</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Ханты-Мансийский АО</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Челябинская область</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Чеченская Республика</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Чувашия</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Ямало-Ненецкий АО</Region>
+        <Bid>1</Bid>
+      </Item>
+      <Item>
+        <Region>Ярославская область</Region>
+        <Bid>1</Bid>
+      </Item>
+    </PromoManualOptions>
+  </Ad>
+  <Ad>
     <Id>DRAFT-1791621137583</Id>
     <Title>Настоящая Паста Амосова 450г</Title>
     <Description><![CDATA[Паста Амосова 450 г — густая фруктово-ореховая смесь с мёдом, с лёгкой кислинкой и без приторности. Подойдёт к чаю, каше, творогу или йогурту.<br />
