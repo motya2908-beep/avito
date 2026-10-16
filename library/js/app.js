@@ -472,6 +472,30 @@
 
   /* ---------- Шаблоны ---------- */
 
+  // Размеры на обложке задаются в долях её ширины: --u = 1% ширины.
+  const coverUnit = (n) => `calc(${n} * var(--u))`;
+
+  // Старый Safari (до iOS 16) не знает единиц cqi — считаем --u в пикселях сами.
+  function setupCoverFallback() {
+    const supported = window.CSS && typeof window.CSS.supports === 'function' && window.CSS.supports('width', '1cqi');
+    if (supported) return;
+    let frame = 0;
+    const sizeCovers = () => {
+      frame = 0;
+      document.querySelectorAll('.cover').forEach((cover) => {
+        const width = cover.getBoundingClientRect().width;
+        if (width) cover.style.setProperty('--u', `${(width / 100).toFixed(3)}px`);
+      });
+    };
+    const schedule = () => {
+      if (!frame) frame = window.requestAnimationFrame(sizeCovers);
+    };
+    if (window.MutationObserver) new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
+    window.addEventListener('resize', schedule);
+    window.addEventListener('orientationchange', schedule);
+    schedule();
+  }
+
   function coverHTML(book, extraClass) {
     const c = book.cover;
     const classes = ['cover', `cover--${c.layout}`];
@@ -482,8 +506,8 @@
     const longest = Math.max(...book.title.split(/[\s-]+/).map((word) => word.length));
     let size = Math.min(11, room / (longest * 0.68));
     if (book.title.length > 26) size = Math.min(size, 8.2);
-    let style = `--cv-bg:${c.bg};--cv-ink:${c.ink};--cv-acc:${c.acc};--cv-title:${size.toFixed(2)}cqi`;
-    if (c.vars) style += `;${c.vars}`;
+    let style = `--cv-bg:${c.bg};--cv-ink:${c.ink};--cv-acc:${c.acc};--cv-title:${coverUnit(size.toFixed(2))}`;
+    if (c.vars) style += `;${c.vars.replace(/(-?\d+(?:\.\d+)?)cqi/g, (m, n) => coverUnit(n))}`;
     let art = '';
     if (c.layout === 'type') {
       const glyph = c.glyph || book.title.charAt(0);
@@ -1318,6 +1342,7 @@
   function init() {
     main = document.getElementById('main');
     if (!main) return;
+    setupCoverFallback();
     mount();
     document.addEventListener('click', onClick);
     document.addEventListener('input', onInput);

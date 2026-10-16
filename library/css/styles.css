@@ -65,7 +65,10 @@ body {
 body::before {
   content: "";
   position: fixed;
-  inset: 0 0 auto;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
   height: env(safe-area-inset-top, 0px);
   z-index: 40;
   background: var(--paper);
@@ -204,9 +207,10 @@ svg {
   border-bottom: 1px solid var(--line);
 }
 
-@supports (backdrop-filter: blur(8px)) {
+@supports ((backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px))) and (background: color-mix(in srgb, red 50%, blue)) {
   .site-header {
     background: color-mix(in srgb, var(--paper) 90%, transparent);
+    -webkit-backdrop-filter: saturate(1.2) blur(10px);
     backdrop-filter: saturate(1.2) blur(10px);
   }
 }
@@ -652,7 +656,9 @@ svg {
   --cv-bg: #555555;
   --cv-ink: #FFFFFF;
   --cv-acc: #999999;
-  --cv-title: 10cqi;
+  --cv-title: calc(10 * var(--u));
+  /* 1% ширины обложки; в старом Safari без cqi значение в px ставит app.js */
+  --u: 1cqi;
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -666,11 +672,21 @@ svg {
   box-shadow: var(--shadow-cover);
 }
 
+@supports not (aspect-ratio: 2 / 3) {
+  .cover {
+    height: 0;
+    padding-top: 150%;
+  }
+}
+
 /* Корешок и лёгкий блик — чтобы обложка читалась как книга. */
 .cover::after {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 3;
   pointer-events: none;
   background:
@@ -680,19 +696,22 @@ svg {
 
 .cover__art {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 1;
 }
 
 .cover__meta {
   position: absolute;
   z-index: 2;
-  left: 13cqi;
-  right: 9cqi;
-  bottom: 11cqi;
+  left: calc(13 * var(--u));
+  right: calc(9 * var(--u));
+  bottom: calc(11 * var(--u));
   display: flex;
   flex-direction: column;
-  gap: 3.5cqi;
+  gap: calc(3.5 * var(--u));
 }
 
 .cover__author,
@@ -703,7 +722,7 @@ svg {
 .cover__author {
   font-family: var(--font-text);
   font-weight: 600;
-  font-size: 5.4cqi;
+  font-size: calc(5.4 * var(--u));
   line-height: 1.25;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -716,6 +735,7 @@ svg {
   font-size: var(--cv-title);
   line-height: 1.16;
   overflow-wrap: break-word;
+  -webkit-hyphens: auto;
   hyphens: auto;
   text-wrap: balance;
 }
@@ -726,28 +746,31 @@ svg {
 
 /* Рамка: двойная линия, текст по центру. */
 .cover--frame .cover__art {
-  inset: 6cqi 6cqi 6cqi 9cqi;
-  border: 0.9cqi solid var(--cv-acc);
-  box-shadow: inset 0 0 0 2.2cqi var(--cv-bg), inset 0 0 0 2.7cqi var(--cv-acc);
+  top: calc(6 * var(--u));
+  right: calc(6 * var(--u));
+  bottom: calc(6 * var(--u));
+  left: calc(9 * var(--u));
+  border: calc(0.9 * var(--u)) solid var(--cv-acc);
+  box-shadow: inset 0 0 0 calc(2.2 * var(--u)) var(--cv-bg), inset 0 0 0 calc(2.7 * var(--u)) var(--cv-acc);
 }
 
 .cover--frame .cover__meta {
-  top: 16cqi;
-  bottom: 16cqi;
-  left: 19cqi;
-  right: 16cqi;
+  top: calc(16 * var(--u));
+  bottom: calc(16 * var(--u));
+  left: calc(19 * var(--u));
+  right: calc(16 * var(--u));
   justify-content: center;
   align-items: center;
-  gap: 5cqi;
+  gap: calc(5 * var(--u));
   text-align: center;
 }
 
 .cover--frame .cover__author::after {
   content: "";
   display: block;
-  width: 12cqi;
-  height: 0.9cqi;
-  margin: 5cqi auto 0;
+  width: calc(12 * var(--u));
+  height: calc(0.9 * var(--u));
+  margin: calc(5 * var(--u)) auto 0;
   background: var(--cv-acc);
 }
 
@@ -766,10 +789,10 @@ svg {
 }
 
 .cover--band .cover__meta {
-  top: 54cqi;
-  bottom: 31cqi;
-  left: 12cqi;
-  right: 10cqi;
+  top: calc(54 * var(--u));
+  bottom: calc(31 * var(--u));
+  left: calc(12 * var(--u));
+  right: calc(10 * var(--u));
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -783,40 +806,54 @@ svg {
 .cover--orb .cover__art::before {
   content: "";
   position: absolute;
-  left: var(--orb-x, 18cqi);
-  top: var(--orb-y, 12cqi);
-  width: var(--orb-size, 62cqi);
-  aspect-ratio: 1;
+  left: var(--orb-x, calc(18 * var(--u)));
+  top: var(--orb-y, calc(12 * var(--u)));
+  width: var(--orb-size, calc(62 * var(--u)));
+  height: var(--orb-size, calc(62 * var(--u)));
   border-radius: 50%;
   background: var(--cv-acc);
-  background: radial-gradient(
-    circle at 34% 30%,
-    color-mix(in srgb, var(--cv-acc) 62%, #FFFFFF) 0,
-    var(--cv-acc) 55%,
-    color-mix(in srgb, var(--cv-acc) 80%, #000000) 100%
-  );
 }
 
 .cover--ring .cover__art::before {
   background: var(--cv-bg);
-  box-shadow: 0 0 0 1.5cqi var(--cv-acc), 0 0 9cqi 2cqi color-mix(in srgb, var(--cv-acc) 65%, transparent);
+  box-shadow: 0 0 0 calc(1.5 * var(--u)) var(--cv-acc);
+}
+
+/* Объём шара и свечение кольца — где браузер знает color-mix. */
+@supports (color: color-mix(in srgb, red 50%, blue)) {
+  .cover--orb .cover__art::before {
+    background: radial-gradient(
+      circle at 34% 30%,
+      color-mix(in srgb, var(--cv-acc) 62%, #FFFFFF) 0,
+      var(--cv-acc) 55%,
+      color-mix(in srgb, var(--cv-acc) 80%, #000000) 100%
+    );
+  }
+
+  .cover--ring .cover__art::before {
+    background: var(--cv-bg);
+    box-shadow: 0 0 0 calc(1.5 * var(--u)) var(--cv-acc), 0 0 calc(9 * var(--u)) calc(2 * var(--u)) color-mix(in srgb, var(--cv-acc) 65%, transparent);
+  }
 }
 
 /* Полосы: ар-деко, рельсы, волны. */
 .cover--stripes .cover__art {
-  inset: 0 0 47% 0;
-  border-bottom: 0.9cqi solid var(--cv-acc);
-  background: repeating-linear-gradient(var(--angle, 135deg), var(--cv-acc) 0 3cqi, transparent 3cqi 7.2cqi);
+  top: 0;
+  right: 0;
+  bottom: 47%;
+  left: 0;
+  border-bottom: calc(0.9 * var(--u)) solid var(--cv-acc);
+  background: repeating-linear-gradient(var(--angle, 135deg), var(--cv-acc) 0 calc(3 * var(--u)), transparent calc(3 * var(--u)) calc(7.2 * var(--u)));
 }
 
 /* Крупный знак: число, буква, аббревиатура. */
 .cover__glyph {
   position: absolute;
-  left: 11cqi;
-  top: 5cqi;
+  left: calc(11 * var(--u));
+  top: calc(5 * var(--u));
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 54cqi;
+  font-size: calc(54 * var(--u));
   line-height: 1;
   letter-spacing: -0.04em;
   color: var(--cv-acc);
@@ -824,13 +861,13 @@ svg {
 }
 
 .cover__glyph--wide {
-  top: 9cqi;
-  font-size: 30cqi;
+  top: calc(9 * var(--u));
+  font-size: calc(30 * var(--u));
 }
 
 .cover__glyph--xwide {
-  top: 11cqi;
-  font-size: 22cqi;
+  top: calc(11 * var(--u));
+  font-size: calc(22 * var(--u));
 }
 
 /* Кожаный корешок слева. */
@@ -840,32 +877,38 @@ svg {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 24cqi;
+  width: calc(24 * var(--u));
   background: var(--cv-acc);
 }
 
 /* Бинты на корешке: по две тонкие линии сверху и снизу. */
 .cover--spine .cover__art::after {
-  --band: color-mix(in srgb, var(--cv-bg) 70%, transparent);
+  --band: rgba(255, 255, 255, 0.35);
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 24cqi;
+  width: calc(24 * var(--u));
   background:
-    linear-gradient(var(--band), var(--band)) 0 16cqi / 100% 0.8cqi no-repeat,
-    linear-gradient(var(--band), var(--band)) 0 23cqi / 100% 0.8cqi no-repeat,
-    linear-gradient(var(--band), var(--band)) 0 calc(100% - 23cqi) / 100% 0.8cqi no-repeat,
-    linear-gradient(var(--band), var(--band)) 0 calc(100% - 16cqi) / 100% 0.8cqi no-repeat;
+    linear-gradient(var(--band), var(--band)) 0 calc(16 * var(--u)) / 100% calc(0.8 * var(--u)) no-repeat,
+    linear-gradient(var(--band), var(--band)) 0 calc(23 * var(--u)) / 100% calc(0.8 * var(--u)) no-repeat,
+    linear-gradient(var(--band), var(--band)) 0 calc(100% - calc(23 * var(--u))) / 100% calc(0.8 * var(--u)) no-repeat,
+    linear-gradient(var(--band), var(--band)) 0 calc(100% - calc(16 * var(--u))) / 100% calc(0.8 * var(--u)) no-repeat;
+}
+
+@supports (color: color-mix(in srgb, red 50%, blue)) {
+  .cover--spine .cover__art::after {
+    --band: color-mix(in srgb, var(--cv-bg) 70%, transparent);
+  }
 }
 
 .cover--spine .cover__meta {
-  top: 15cqi;
+  top: calc(15 * var(--u));
   bottom: auto;
-  left: 32cqi;
-  right: 8cqi;
-  gap: 4cqi;
+  left: calc(32 * var(--u));
+  right: calc(8 * var(--u));
+  gap: calc(4 * var(--u));
 }
 
 /* ---------- Каталог ---------- */
@@ -1195,6 +1238,7 @@ svg {
 }
 
 .select {
+  -webkit-appearance: none;
   appearance: none;
   min-height: 42px;
   padding: 8px 40px 8px 12px;
@@ -1317,7 +1361,10 @@ svg {
 .card__title a::after {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   border-radius: 12px;
 }
 
