@@ -10,6 +10,7 @@ on:
       - .github/workflows/update-feed.yml
       - scripts/**
       - tests/**
+      - library/**
 
 permissions:
   contents: write
@@ -56,7 +57,10 @@ jobs:
           git commit -m "Update Avito feed and public photos"
           git push
 
-      - name: Upload only the public feed and photos
+      - name: Add the e-library site
+        run: cp -R library _site/library
+
+      - name: Upload only the public feed, photos and e-library site
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site

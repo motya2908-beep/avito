@@ -12,6 +12,8 @@ the exact original bytes in `media/`, and replaces only the image URLs in XML.
 Listing IDs, titles, descriptions (including CDATA), prices and addresses are
 preserved. SHA-256 filenames are for integrity and reuse, not image disguising.
 Only `_site/` is deployed: no source secrets or private application files.
+The static e-library study site from `library/` is published alongside the
+feed at `/library/`.
 
 If a photo cannot download or validate, the workflow fails and does not deploy
 an incomplete feed. Already mirrored photos are reused, and old public photo
