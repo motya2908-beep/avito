@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Библиотека «Переплёт»</title>
+  <meta name="description" content="Электронная библиотека: каталог книг с поиском и фильтрами, личная полка со статусами чтения, оценками и заметками, статистика и рекомендации.">
+  <meta name="theme-color" content="#FCFBF8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-action="skip">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="wrap header__inner">
+      <a class="logo" href="#catalog" aria-label="Переплёт — на главную">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect x="4" y="8" width="6" height="19" rx="1" class="i-wine"/>
+          <rect x="11" y="4" width="6" height="23" rx="1" class="i-ink"/>
+          <rect x="19.5" y="9" width="6" height="18" rx="1" class="i-wine" transform="rotate(14 22.5 27)"/>
+          <rect x="2" y="27" width="28" height="2.4" rx="1.2" class="i-ink"/>
+        </svg>
+        <span class="logo__text">
+          <span class="logo__name">Переплёт</span>
+          <span class="logo__tag">электронная библиотека</span>
+        </span>
+      </a>
+      <button type="button" class="menu-toggle" id="menu-toggle" data-action="toggle-menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        Меню
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Разделы">
+        <a href="#catalog" data-nav="catalog">Каталог</a>
+        <a href="#shelf" data-nav="shelf">Моя полка <span class="nav__count" id="nav-shelf-count"></span></a>
+        <a href="#recs" data-nav="recs">Рекомендации</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <noscript>
+      <div class="wrap page"><p class="lede">Для работы каталога и личной полки включите JavaScript.</p></div>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer__inner">
+      <p><b>Переплёт</b> — учебный проект электронной библиотеки.</p>
+      <p>Полка, оценки и заметки хранятся только в этом браузере (localStorage) и никуда не отправляются.</p>
+    </div>
+  </footer>
+
+  <div class="toast-region" id="toast-region" aria-live="polite"></div>
+
+  <script src="js/books.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
